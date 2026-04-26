@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+    <style>
+        body {
+            background-color: #1E1E1E;
+            color: #F0F0F0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            max-width: 750px;
+            margin: 60px auto;
+            padding: 0 20px;
+            line-height: 1.8;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .label {
+            display: inline-block;
+            background-color: #4DA6FF;
+            color: #1E1E1E;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .question-box {
+            background-color: #2A2A2A;
+            border-left: 4px solid #4DA6FF;
+            padding: 16px 20px;
+            margin: 24px 0;
+            border-radius: 4px;
+        }
+
+        .question-box p {
+            margin: 0 0 10px 0;
+            font-weight: bold;
+        }
+
+        .question-box label {
+            display: block;
+            margin: 6px 0;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 16px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            font-size: 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-switch {
+            background-color: #F0F0F0;
+            color: #1E1E1E;
+        }
+
+        .btn-form {
+            background-color: #4DA6FF;
+            color: #1E1E1E;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+
+        .mode-tag {
+            font-size: 13px;
+            color: #AAAAAA;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+<span class="label">Dark Mode</span>
+<h1>Monitor Panel Types: From IPS to the future of OLED</h1>
+<p class="mode-tag">You are currently viewing this page in <strong>Dark Mode</strong>.</p>
+
+<p>
+    Nowadays, monitors use different panel technologies which have their distinct strengths.
+    IPS (In-Plane Switching) panels have accurate colours and wide viewing angles making them
+    a popular pick for creative work. VA (Vertical Alignment) panels are known for their deeper
+    blacks and higher contrast ratios which is ideal for movie watching and gaming. However,
+    both of these technologies struggle to compete with OLED, which lights up each pixel
+    individually. This way OLED achieves perfect blacks, near-instant response times and even
+    better colour accuracy than IPS. OLED is widely considered the best panel technology
+    available today. Moving forward, Mini-LED appears to be a strong competitor, offering
+    improved brightness and contrast over traditional LED panels at a lower price than OLED,
+    making it a promising option for the mainstream market.
+</p>
+
+<div class="question-box">
+    <p>Q1. Which panel technology lights each pixel individually?</p>
+    <label><input type="radio" name="q1">IPS</label>
+    <label><input type="radio" name="q1">VA</label>
+    <label><input type="radio" name="q1">OLED</label>
+    <label><input type="radio" name="q1">Mini-LED</label>
+</div>
+
+<div class="question-box">
+    <p>Q2. What advantage do VA panels have over IPS panels?</p>
+    <label><input type="radio" name="q2">Faster response times</label>
+    <label><input type="radio" name="q2">Deeper blacks and higher contrast</label>
+    <label><input type="radio" name="q2">Lower price</label>
+    <label><input type="radio" name="q2">Better viewing angles</label>
+</div>
+
+<div class="question-box">
+    <p>Q3. Why is Mini-LED considered a promising option?</p>
+    <label><input type="radio" name="q3">It is cheaper than OLED</label>
+    <label><input type="radio" name="q3">It uses less power than IPS</label>
+    <label><input type="radio" name="q3">It has wider viewing angles than VA</label>
+    <label><input type="radio" name="q3">It is brighter than OLED</label>
+</div>
+
+<div class="nav-buttons">
+    <a href="index.html" class="btn btn-switch">Switch to Light Mode</a>
+    <a href="google-form" class="btn btn-form">Go to the Questionnaire</a>
+</div>
+</body>
+</html>
